@@ -1,0 +1,173 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú con bordes negros y "Inicio" en verde azul */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    border-right: 2px solid black;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    background-color: #5bb3b6;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.inscripcion {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    background-color: #5bb3b6;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 320px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inscripcion form input, .inscripcion form button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.inscripcion button {
+    background-color: white;
+    color: #5bb3b6;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contenido */
+.contenido {
+    text-align: left;
+    padding: 30px;
+}
+
+.titulo-verde {
+    color: #5bb3b6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sección aprendizaje */
+.aprendizaje {
+    text-align: center;
+    padding: 30px;
+}
+
+.cajas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* Mayor separación entre cajas */
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Bordes negros en los recuadros */
+.caja {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.caja img {
+    width: 50px;
+    height: 50px;
+}
+
+.caja h3 {
+    color: #5bb3b6;
+}
+
+/* Footer */
+footer {
+    background-color: #585050; /* Fondo gris */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    text-align: left;
+}
+
+.footer-verde {
+    color: #5bb3b6; /* Letras verdes */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-texto {
+    color: rgb(255, 249, 249); /* Letras blancas */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
