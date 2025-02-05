@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú con bordes negros y "Inicio" en verde azul */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    border-right: 2px solid black;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* ---- Estilos para el formulario ---- */
+.contacto {
+    background: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contacto p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+}
+
+.contacto input,
+.contacto textarea,
+.contacto select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.contacto input:focus,
+.contacto textarea:focus,
+.contacto select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilos para los botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.contacto button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+/* Botón de enviar */
+.contacto button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+.contacto button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de borrar */
+.contacto button.reset {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.contacto button.reset:hover {
+    background-color: #cc0000;
+}
+/* Ajuste del footer para que quede más abajo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Mantener el footer en la parte inferior */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: 50px; /* Ajusta la distancia entre la tabla y el footer */
+}
+/* Footer */
+footer {
+    background-color: #585050; /* Fondo gris */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    text-align: left;
+}
+
+.footer-verde {
+    color: #5bb3b6; /* Letras verdes */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-texto {
+    color: rgb(255, 249, 249); /* Letras blancas */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
